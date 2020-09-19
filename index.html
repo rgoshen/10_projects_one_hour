@@ -20,9 +20,12 @@
     <link rel="stylesheet" href="./styles/app.css" />
     <title>My Utilities</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#nav-bar">
     <!-- Navbar -->
-    <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav
+      id="nav-bar"
+      class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent"
+    >
       <form action="" class="form-inline">
         <button
           id="bgColor"
@@ -53,11 +56,9 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="nav nav-pills">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
+        <ul class="nav nav-tabss" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#auto-text">Auto Text</a>
@@ -70,12 +71,7 @@
     </nav>
     <!-- end Navbar -->
 
-    <div
-      class="container"
-      data-spy="scroll"
-      data-target="nav-bar"
-      data-offset="0"
-    >
+    <div class="container">
       <div class="row">
         <div class="col">
           <!-- Auto Text -->
