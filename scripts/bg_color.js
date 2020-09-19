@@ -25,8 +25,12 @@ $(document).ready(() => {
 
     if (index === 7) {
       $("body").addClass("text-light");
+      $("#nav-bar").removeClass("navbar-light");
+      $("#nav-bar").addClass("navbar-dark");
     } else {
       $("body").removeClass("text-light");
+      $("#nav-bar").removeClass("navbar-dark");
+      $("#nav-bar").addClass("navbar-light");
     }
 
     index++;
