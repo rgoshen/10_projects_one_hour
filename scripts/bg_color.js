@@ -22,6 +22,13 @@ $(document).ready(() => {
     }
 
     $("body").addClass(bgColorClass[index]);
+
+    if (index === 7) {
+      $("body").addClass("text-light");
+    } else {
+      $("body").removeClass("text-light");
+    }
+
     index++;
   });
 });
